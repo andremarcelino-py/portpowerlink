@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Power Link - A revolução na automação residencial. Controle inteligente, design moderno e tecnologia de ponta.">
+    <title>Power Link - Automação Residencial Inteligente</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      /* Background video styles */
+      .hero { position: relative; overflow: hidden; min-height: 100vh; }
+      .hero-background { position: absolute; inset: 0; overflow: hidden; }
+      #bgVideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        pointer-events: none;
+      }
+      /* Dark overlay to increase contrast on text */
+      .hero-gradient {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.45));
+        z-index: 1;
+        pointer-events: none;
+      }
+      .hero-content { position: relative; z-index: 2; color: #fff; }
+    </style>
+</head>
+<body>
+  <!-- Navbar Responsiva -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="logopowerlink.png" alt="Power Link" class="logo-img">
+        <span class="logo-text">Power Link</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link">Início</a></li>
+        <li><a href="#problema" class="nav-link">Problema</a></li>
+        <li><a href="#solucao" class="nav-link">Solução</a></li>
+        <li><a href="#funcionalidades" class="nav-link">Funcionalidades</a></li>
+        <li><a href="#galeria" class="nav-link">Galeria</a></li>
+        <li><a href="#cta" class="nav-link nav-cta">Começar</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section - Animado -->
+  <section class="hero" id="hero">
+      <div class="hero-background">
+        <!-- Background video (autoplay muted loop) -->
+       <video id="bgVideo" autoplay muted loop playsinline preload="auto" poster="video10.jpg">
+         <source src="video10.mp4" type="video/mp4">
+         Seu navegador não suporta vídeos HTML5.
+       </video>
+         <div class="hero-gradient"></div>
+         <div class="hero-particles"></div>
+       </div>
+       <div class="hero-content">
+         <div class="hero-text" data-animate="fade-up">
+          <h1 class="hero-title">
+            <span class="title-line">Power Link</span>
+            <span class="title-line">A Revolução</span>
+            <span class="title-line highlight">na Automação</span>
+          </h1>
+          <p class="hero-subtitle">Controle total da sua casa com tecnologia de ponta. Simples, inteligente e poderoso.</p>
+          <div class="hero-buttons">
+            <a href="#cta" class="btn btn-primary">Começar Agora</a>
+            <a href="#video" class="btn btn-secondary">Ver Vídeo</a>
+          </div>
+        </div>
+       </div>
+      <div class="hero-scroll-indicator">
+        <span>Role para explorar</span>
+        <div class="scroll-arrow"></div>
+      </div>
+  </section>
+
+  <!-- Seção Problema -->
+  <section class="problema" id="problema">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">O Desafio</span>
+        <h2 class="section-title">A Vida Moderna Exige Mais</h2>
+      </div>
+      <div class="problema-grid">
+        <div class="problema-card" data-animate="fade-up" data-delay="0.1">
+          <div class="problema-icon">⚡</div>
+          <h3>Controle Fragmentado</h3>
+          <p>Múltiplos apps e dispositivos para controlar diferentes aspectos da sua casa. Confuso e ineficiente.</p>
+        </div>
+        <div class="problema-card" data-animate="fade-up" data-delay="0.2">
+          <div class="problema-icon">🔌</div>
+          <h3>Instalação Complexa</h3>
+          <p>Sistemas de automação tradicionais exigem obras caras e profissionais especializados.</p>
+        </div>
+        <div class="problema-card" data-animate="fade-up" data-delay="0.3">
+          <div class="problema-icon">💰</div>
+          <h3>Alto Custo</h3>
+          <p>Investimentos altos em sistemas proprietários que não se comunicam entre si.</p>
+        </div>
+        <div class="problema-card" data-animate="fade-up" data-delay="0.4">
+          <div class="problema-icon">🔒</div>
+          <h3>Falta de Flexibilidade</h3>
+          <p>Soluções rígidas que não se adaptam às suas necessidades e rotina.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Solução -->
+  <section class="solucao" id="solucao">
+    <div class="container">
+      <div class="solucao-content">
+        <div class="solucao-text" data-animate="fade-right">
+          <span class="section-label">A Solução</span>
+          <h2 class="section-title">Power Link: Simplicidade e Poder</h2>
+          <p class="solucao-description">
+            Um sistema unificado que transforma sua casa em um ambiente inteligente. 
+            Controle iluminação, som, temperatura e muito mais através de uma interface intuitiva 
+            e moderna. Sem obras, sem complicação.
+          </p>
+          <ul class="solucao-features">
+            <li data-animate="fade-right" data-delay="0.1">
+              <span class="feature-check">✓</span>
+              <span>Instalação simples e rápida</span>
+            </li>
+            <li data-animate="fade-right" data-delay="0.2">
+              <span class="feature-check">✓</span>
+              <span>Interface web moderna e responsiva</span>
+            </li>
+            <li data-animate="fade-right" data-delay="0.3">
+              <span class="feature-check">✓</span>
+              <span>Controle via MQTT e Firebase</span>
+            </li>
+            <li data-animate="fade-right" data-delay="0.4">
+              <span class="feature-check">✓</span>
+              <span>Agendamentos e automações inteligentes</span>
+            </li>
+          </ul>
+        </div>
+        <div class="solucao-visual" data-animate="fade-left">
+          <!-- Substitua esta imagem pela imagem da solução -->
+          <img src="imagem2.jpeg" alt="Power Link - Solução" class="solucao-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Vídeo -->
+  <section class="video-section" id="video">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Demonstração</span>
+        <h2 class="section-title">Veja o Power Link em Ação</h2>
+      </div>
+      <div class="video-wrapper" data-animate="fade-up" data-delay="0.2">
+        <div class="video-container">
+          <!-- Substitua pelo vídeo principal do produto -->
+          <video class="video-player" controls poster="imagem3.jpeg">
+            <source src="video1.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Funcionalidades Animadas -->
+  <section class="funcionalidades" id="funcionalidades">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Recursos</span>
+        <h2 class="section-title">Tecnologia que Transforma</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-animate="fade-up" data-delay="0.1">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3>Controle Unificado</h3>
+          <p>Gerencie todos os dispositivos da sua casa em um único lugar. Interface intuitiva e poderosa.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="0.2">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3>Agendamentos Inteligentes</h3>
+          <p>Configure rotinas automáticas que se adaptam à sua rotina. Acorde com luz, música e muito mais.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="0.3">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+          </div>
+          <h3>Cenas Personalizadas</h3>
+          <p>Crie cenas para diferentes momentos: Cinema, Festa, Trabalho. Um toque e tudo se ajusta.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="0.4">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
+          <h3>Controle Remoto</h3>
+          <p>Acesse e controle sua casa de qualquer lugar. Seguro, rápido e confiável.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="0.5">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h3>LED RGB Inteligente</h3>
+          <p>Iluminação colorida com milhões de cores. Modos sólido, arco-íris e controle de brilho.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="0.6">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 12l2 2 4-4"/>
+              <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+              <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+            </svg>
+          </div>
+          <h3>Switches Físicos</h3>
+          <p>Controle tradicional quando precisar. Switches físicos integrados para máxima flexibilidade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Linha do Tempo Técnica -->
+  <section class="timeline" id="timeline">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Tecnologia</span>
+        <h2 class="section-title">Arquitetura de Ponta</h2>
+      </div>
+      <div class="timeline-container">
+        <div class="timeline-item" data-animate="fade-right">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>ESP32</h3>
+            <p>Microcontrolador de alta performance com Wi-Fi e Bluetooth integrados. O coração do sistema.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-animate="fade-left">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>MQTT Protocol</h3>
+            <p>Comunicação em tempo real através do protocolo MQTT. Rápido, eficiente e confiável.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-animate="fade-right">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Firebase Realtime</h3>
+            <p>Sincronização em tempo real com Firebase. Dados seguros e sempre atualizados.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-animate="fade-left">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Interface Web Moderna</h3>
+            <p>Design responsivo e intuitivo. Funciona perfeitamente em qualquer dispositivo.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-animate="fade-right">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Sistema de Autenticação</h3>
+            <p>Segurança em camadas com chaves mestres e temporárias. Controle total de acesso.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria com Lightbox -->
+  <section class="galeria" id="galeria">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Galeria</span>
+        <h2 class="section-title">Power Link em Destaque</h2>
+      </div>
+      <div class="gallery-grid">
+        <!-- Substitua estas imagens pelas imagens do produto -->
+        <div class="gallery-item" data-animate="fade-up" data-delay="0.1">
+          <img src="imagem1.jpeg" alt="Power Link - Visão 1" class="gallery-image" data-lightbox="gallery">
+        </div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="0.2">
+          <img src="imagem2.jpeg" alt="Power Link - Visão 2" class="gallery-image" data-lightbox="gallery">
+        </div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="0.3">
+          <img src="imagem3.jpeg" alt="Power Link - Visão 3" class="gallery-image" data-lightbox="gallery">
+        </div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="0.4">
+          <img src="imagem4.jpeg" alt="Power Link - Visão 4" class="gallery-image" data-lightbox="gallery">
+        </div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="0.5">
+          <img src="imagem5.jpeg" alt="Power Link - Visão 5" class="gallery-image" data-lightbox="gallery">
+        </div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="0.6">
+          <img src="imagem1.jpeg" alt="Power Link - Visão 6" class="gallery-image" data-lightbox="gallery">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">&times;</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Anterior">‹</button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Próximo">›</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightboxImage">
+    </div>
+  </div>
+
+  <!-- Comparativo Antes x Depois -->
+  <section class="comparativo" id="comparativo">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Transformação</span>
+        <h2 class="section-title">Antes e Depois</h2>
+      </div>
+      <div class="before-after-wrapper" data-animate="fade-up" data-delay="0.2">
+        <div class="before-after-container" id="beforeAfter">
+          <div class="before-after-image before-image">
+            <!-- Substitua pela imagem "antes" -->
+            <img src="imagem4.jpeg" alt="Antes - Sistema Tradicional">
+            <div class="before-after-label">Antes</div>
+          </div>
+          <div class="before-after-image after-image">
+            <!-- Substitua pela imagem "depois" -->
+            <img src="imagem5.jpeg" alt="Depois - Power Link">
+            <div class="before-after-label">Depois</div>
+          </div>
+          <div class="before-after-slider" id="beforeAfterSlider">
+            <div class="slider-handle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Equipe -->
+  <section class="equipe" id="equipe">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Equipe</span>
+        <h2 class="section-title">Por Trás do Power Link</h2>
+      </div>
+      <div class="equipe-grid">
+        <div class="equipe-card" data-animate="fade-up" data-delay="0.1">
+          <div class="equipe-avatar">
+            <div class="avatar-placeholder">PL</div>
+          </div>
+          <h3>Power Link Team</h3>
+          <p class="equipe-role">Desenvolvimento e Inovação</p>
+          <p class="equipe-bio">Equipe dedicada a criar soluções inteligentes que transformam a experiência residencial.</p>
+        </div>
+        <div class="equipe-card" data-animate="fade-up" data-delay="0.2">
+          <div class="equipe-avatar">
+            <div class="avatar-placeholder">EN</div>
+          </div>
+          <h3>Engenharia</h3>
+          <p class="equipe-role">Hardware e Firmware</p>
+          <p class="equipe-bio">Especialistas em eletrônica e programação embarcada, garantindo performance e confiabilidade.</p>
+        </div>
+        <div class="equipe-card" data-animate="fade-up" data-delay="0.3">
+          <div class="equipe-avatar">
+            <div class="avatar-placeholder">UX</div>
+          </div>
+          <h3>Design</h3>
+          <p class="equipe-role">Interface e Experiência</p>
+          <p class="equipe-bio">Focados em criar interfaces intuitivas e experiências memoráveis para os usuários.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-content" data-animate="fade-up">
+        <h2 class="cta-title">Pronto para Transformar sua Casa?</h2>
+        <p class="cta-subtitle">Junte-se à revolução da automação residencial. Simples, inteligente e poderoso.</p>
+        <div class="cta-buttons">
+          <a href="index.html" class="btn btn-primary btn-large">Acessar Sistema</a>
+          <a href="#galeria" class="btn btn-secondary btn-large">Ver Mais</a>
+        </div>
+        <div class="cta-features">
+          <div class="cta-feature">
+            <span class="cta-icon">✓</span>
+            <span>Instalação Rápida</span>
+          </div>
+          <div class="cta-feature">
+            <span class="cta-icon">✓</span>
+            <span>Suporte Completo</span>
+          </div>
+          <div class="cta-feature">
+            <span class="cta-icon">✓</span>
+            <span>Atualizações Gratuitas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="logopowerlink.png" alt="Power Link" class="footer-logo">
+          <span class="footer-brand-text">Power Link</span>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Produto</h4>
+            <ul>
+              <li><a href="#funcionalidades">Funcionalidades</a></li>
+              <li><a href="#timeline">Tecnologia</a></li>
+              <li><a href="#galeria">Galeria</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#equipe">Equipe</a></li>
+              <li><a href="#solucao">Sobre</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Suporte</h4>
+            <ul>
+              <li><a href="index.html">Acessar Sistema</a></li>
+              <li><a href="#cta">Começar</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Power Link. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="landing.js"></script>
+</body>
+</html>
+
